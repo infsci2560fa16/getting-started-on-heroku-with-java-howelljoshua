@@ -13,7 +13,7 @@ and open the template in the editor.
         <script type="text/javascript" src="js/javascript.js"></script>
     </head>
     <body>
-        <ul class="topnav" id="myTopnav">
+        <ul class="topnav" id="topNav">
             <li><a href="index.html">Begin Your Search</a></li>
             <li><a href="instructor.html">Instructors</a></li>
             <li><a href="student.html">Students</a></li>
@@ -25,15 +25,24 @@ and open the template in the editor.
             
         
             Type of Instruction:<br> 
-            <select name="Type of Instruction" >
+            <select name="type" onselect="getZip()">
+              <option value="Blank"></option>
               <option value="Local">Local Instruction</option>
               <option value="Online">Online Instruction</option>
             </select>
-            <br><br>
+            <br>
             
+                     
+            <div id="zip">
+            Zip Code:<br>
+            <input>   
+            </div>
+            
+
             
             Guitar Type:<br>        
             <select name="Guitar Type" >
+              <option value="Blank"></option>
               <option value="Acoustic">Acoustic</option>
               <option value="Electric">Electric</option>
               <option value="Classical">Classical</option>
@@ -73,6 +82,7 @@ and open the template in the editor.
             
             Age Range:<br> 
             <select name="Age Range" >
+              <option value="Blank"></option>
               <option value="Child">Child</option>
               <option value="Teenager">Teenager</option>
               <option value="20's">20's</option>              
@@ -87,6 +97,7 @@ and open the template in the editor.
             
             Skill Level:<br>
             <select name="Skill Level" >
+              <option value="Blank"></option>
               <option value="Beginner">Beginner</option>
               <option value="Intermediate">Intermediate (2-5 years)</option>
               <option value="Advanced">Advanced (5-10 years)</option>

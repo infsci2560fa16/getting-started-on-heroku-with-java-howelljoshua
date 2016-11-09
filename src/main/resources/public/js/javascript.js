@@ -1,13 +1,10 @@
-
-
-
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-function myFunction(){
+  //When the user clicks on the button, 
+  //toggle between hiding and showing the dropdown content */
+function chooserBtn(){
     document.getElementById("beginDropdown").classList.toggle("show");
 
 
-// Close the dropdown menu if the user clicks outside of it
+// When the User clicks away from the dropdown menu, close the menu
 window.onclick = function(event) {
   if (!event.target.matches('.dropbtn')) {
     var dropdowns = document.getElementsByClassName("dropdown-content");
@@ -19,5 +16,18 @@ window.onclick = function(event) {
       }
     }
   }
-};}
+};
+
+  function getZip(){
+    var zipField = document.getElementById("zip");
+    var typeField = document.getElementByName("type");
+    var typeVal = typeField.options[typeField.selectedIndex].value;    
+        if (typeVal === "Local") {
+            zipField.visibility = "visible";
+        }
+        else {
+            zipField.visibility = "hidden";
+        }
+  }
+}
 

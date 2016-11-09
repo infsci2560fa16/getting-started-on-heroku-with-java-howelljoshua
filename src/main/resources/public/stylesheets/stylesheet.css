@@ -13,10 +13,9 @@ ul.topnav li a {
     display: inline-block;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 16px;
+    padding: 16px;
     text-decoration: none;
-    transition: 0.3s;
-    font-size: 17px;
+    font-size: 18px;
 }
 
 ul.topnav li a:hover {background-color: #555;}
@@ -31,7 +30,7 @@ ul.topnav li a:hover {background-color: #555;}
 
 
 
-/* BODY */
+/* PAGE BODY */
 body {
     font-family:'Calibri';
     font-size:14px;
@@ -46,11 +45,26 @@ body {
 }
 */
 
+
+/*FORMS USES A CLASS */
 .forms {    
     padding: 0px 64px;
     display: block;
     font-size: 18px;
 }
+
+
+/*HIDE CLASS*/
+.hide{
+  visibility: hidden;  
+}
+
+/*SHOW CLASS*/
+.show{
+  visibility: visible;  
+}
+
+
 
 
 .text-center {
@@ -139,27 +153,27 @@ section {
     position: fixed;    
 }
 
-/* Dropdown button on hover & focus */
+/* DROPDOWN BUTTON HOVER */
 .dropbtn:hover, .dropbtn:focus {
     background-color: #3e8e41;
 }
 
-/* The container <div> - needed to position the dropdown content */
+/* POSITION OF THE DROPDOWN'S CONTENT*/
 .dropdown {
     position: absolute;
     display: inline-block;
 }
 
-/* Dropdown Content */
+/* DROPDOWN CONTENT */
 .dropdown-content {
     display: none;
     position: absolute;
     background-color: #f1f1f1;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    /*box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);*/
 }
 
-/* Links inside the dropdown */
+/* DROPDOWN LINKS TEXT */
 .dropdown-content a {
     color: black;
     font-weight: bolder;
@@ -169,7 +183,7 @@ section {
     display: block;
 }
 
-/* Change color of dropdown links on hover */
+/* DROPDOWN LINKS HOVER */
 .dropdown-content a:hover {background-color: #d1d1d1}
 
 /* Show the dropdown menu */
@@ -177,7 +191,7 @@ section {
 
 
 
-/* Footer */
+/* FOOTER NOT USED */
 #footer {
     background-color:#000;
     color:#fff;
