@@ -54,12 +54,12 @@ body {
 }
 
 
-/*HIDE CLASS*/
+/*HIDE CLASS MAKES ITEMS INVISIBLE*/
 .hide{
   visibility: hidden;  
 }
 
-/*SHOW CLASS*/
+/*SHOW CLASS MAKES ITEMS VISIBLE*/
 .show{
   visibility: visible;  
 }

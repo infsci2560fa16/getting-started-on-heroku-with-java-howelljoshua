@@ -25,10 +25,9 @@ and open the template in the editor.
             
         
             Type of Instruction:<br> 
-            <select name="type" onselect="getZip()">
-              <option value="Blank"></option>
-              <option value="Local">Local Instruction</option>
+            <select name="type" onchange='getZip(this.value)'>            
               <option value="Online">Online Instruction</option>
+              <option value="Local">Local Instruction</option>
             </select>
             <br>
             
@@ -41,8 +40,7 @@ and open the template in the editor.
 
             
             Guitar Type:<br>        
-            <select name="Guitar Type" >
-              <option value="Blank"></option>
+            <select name="Guitar Type" >              
               <option value="Acoustic">Acoustic</option>
               <option value="Electric">Electric</option>
               <option value="Classical">Classical</option>
@@ -81,8 +79,7 @@ and open the template in the editor.
             
             
             Age Range:<br> 
-            <select name="Age Range" >
-              <option value="Blank"></option>
+            <select name="Age Range" >            
               <option value="Child">Child</option>
               <option value="Teenager">Teenager</option>
               <option value="20's">20's</option>              
@@ -96,8 +93,7 @@ and open the template in the editor.
             
             
             Skill Level:<br>
-            <select name="Skill Level" >
-              <option value="Blank"></option>
+            <select name="Skill Level" >              
               <option value="Beginner">Beginner</option>
               <option value="Intermediate">Intermediate (2-5 years)</option>
               <option value="Advanced">Advanced (5-10 years)</option>

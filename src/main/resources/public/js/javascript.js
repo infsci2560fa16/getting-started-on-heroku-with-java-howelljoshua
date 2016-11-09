@@ -1,6 +1,6 @@
   //When the user clicks on the button, 
-  //toggle between hiding and showing the dropdown content */
-function chooserBtn(){
+  //toggle between hiding and showing the dropdown content */  
+  function chooserBtn(){
     document.getElementById("beginDropdown").classList.toggle("show");
 
 
@@ -18,16 +18,5 @@ window.onclick = function(event) {
   }
 };
 
-  function getZip(){
-    var zipField = document.getElementById("zip");
-    var typeField = document.getElementByName("type");
-    var typeVal = typeField.options[typeField.selectedIndex].value;    
-        if (typeVal === "Local") {
-            zipField.visibility = "visible";
-        }
-        else {
-            zipField.visibility = "hidden";
-        }
-  }
 }
 
